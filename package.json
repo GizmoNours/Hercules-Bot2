@@ -11,7 +11,7 @@
     "winston": "^3.3.3"
   }
 
-  "scripts":{
+  ,"scripts": {
     "start": "node main.js"
   }
 }
