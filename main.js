@@ -98,4 +98,7 @@ client.on("message", msg => {
 }}
 });
 
+let port = process.env.PORT || 5000; 
+client.listen(port, () => console.log('Port is ${Port}'))
+
 client.login(process.env.TOKEN);
