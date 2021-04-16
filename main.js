@@ -15,8 +15,6 @@ client.on('guildMemberAdd', member => {
 
 });
 
-
-
 client.on("message", msg => {
     if (msg.author.username != "Hercules"){
     if (msg.content.match(/hercules/i)) {
@@ -51,21 +49,17 @@ client.on("message", msg => {
         msg.reply("STOP ! Vous avez certainement voulu dire urnes");
     }
 
-
     if (msg.content.match(/Baston/i)) {
         msg.reply("Sur mon honneur, je suis contre la violence.");
     }
-
 
     if (msg.content.match(/réactif/i)) {
         msg.reply("La réactivité est essentielle pour un ministre ou un fonctionnaire.");
     }
 
-
     if (msg.content.match(/Mule/i)) {
         msg.reply("Je n'approuve pas ces pratiques anti jeu.");
     }
-
 
     if (msg.content.match(/Urnes/i)) {
         msg.reply("Il ne faut pas bruler les urnes des honnêtes citoyens.");
@@ -79,12 +73,9 @@ client.on("message", msg => {
         msg.reply("Pas touche au mien sinon ça va gacher ma sieste.");
     }
 
-
-
     if ( msg.content.match(/guerre/i)) {
         msg.reply("Les citoyens ne veulent pas de cette guerre que le gouvernement tente d'imposer sans permettre de débat.");
     }
-
 
     if (msg.content.match(/Président/i)) {
         msg.reply("vous savez que moi j'ai été de nombreuses fois président ?");
@@ -105,14 +96,6 @@ client.on("message", msg => {
     if (msg.mentions.has(client.user)) {
     msg.reply('Tu as demandé mon avis éclairé ?');
 }}
-});
-
-var express = require('express');
-var app = express();
-
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
 });
 
 client.login(process.env.TOKEN);
