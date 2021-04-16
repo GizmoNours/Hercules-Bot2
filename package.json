@@ -12,7 +12,6 @@
   }
 
   ,"scripts": {
-    "postinstall": "npm run build",
-    "start": "node main.js"
+        "start": "node main.js"
   }
 }
