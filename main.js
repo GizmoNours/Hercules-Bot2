@@ -106,13 +106,12 @@ client.on("message", msg => {
     }
 
     if (msg.mentions.has(client.user)) {
-    msg.reply('Tu as demandé mon avis éclairé ?');
-}}
+        msg.reply('Tu as demandé mon avis éclairé ?');
+    }}
 });
 
-//let port = process.env.PORT || 5000;
-//client.listen(process.env.PORT, '0.0.0.0')
+let port = process.env.PORT || 5000;
+client.listen(process.env.PORT, '0.0.0.0')
 
 
-//client.login("process.env.TOKEN");
-client.login("ODMyMzI3Njg2NTI0MjM5OTI0.YHiLkA.JdC1CRYlj_5J7bVYLBr_n1IhxAg");
+client.login("process.env.TOKEN");
