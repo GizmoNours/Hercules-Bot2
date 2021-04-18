@@ -118,4 +118,4 @@ client.on("message", msg => {
 //client.listen(process.env.PORT, '0.0.0.0')
 
 
-client.login("process.env.TOKEN");
+client.login("process.env.DISCORD_TOKEN");
