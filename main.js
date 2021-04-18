@@ -92,13 +92,27 @@ client.on("message", msg => {
     if (msg.content.match(/Blague/i)) {
         msg.reply("Dans un débat, qui ne dit mot con sent...");
     }
+    
+    if (msg.content.match(/Bingo/i)) {
+        msg.reply("C'est vrai ? J'ai dit quelque chose d'utile ?");
+    }
+
+    if (msg.content.match(/Krabot/i)) {
+        msg.reply("Vous saviez que je l'ai déjà remplacé dans le mini-chat pendant ses vacances ?");
+    }
+
+    if (msg.content.match(/Dodo/i)) {
+        msg.reply("Ha ! C'est l'heure de ma sieste !");
+    }
 
     if (msg.mentions.has(client.user)) {
     msg.reply('Tu as demandé mon avis éclairé ?');
 }}
 });
 
-let port = process.env.PORT || 5000; 
+//let port = process.env.PORT || 5000;
+//client.listen(process.env.PORT, '0.0.0.0')
 
 
-client.login(process.env.TOKEN);
+//client.login("process.env.TOKEN");
+client.login("ODMyMzI3Njg2NTI0MjM5OTI0.YHiLkA.JdC1CRYlj_5J7bVYLBr_n1IhxAg");
