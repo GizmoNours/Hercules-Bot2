@@ -105,13 +105,17 @@ client.on("message", msg => {
         msg.reply("Ha ! C'est l'heure de ma sieste !");
     }
 
+    if (msg.content.match(/Conflits/i)) {
+        msg.reply("Les seuls qui m'interessent sont ceux au Kanard à la cantine.");
+    }
+
     if (msg.mentions.has(client.user)) {
         msg.reply('Tu as demandé mon avis éclairé ?');
     }}
 });
 
-let port = process.env.PORT || 5000;
-client.listen(process.env.PORT, '0.0.0.0')
+//let port = process.env.PORT || 5000;
+//client.listen(process.env.PORT, '0.0.0.0')
 
 
 client.login("process.env.TOKEN");
