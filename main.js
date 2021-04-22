@@ -34,7 +34,7 @@ client.on("message", msg => {
     }
 
     if (msg.content.match(/Vote/i)) {
-        msg.reply("Seul un citoyen actif, non fonctionnaire, de plus de 18 ans, ayant une prostate en bon état, la nationalité depuis plus de 10 jours, n'ayant aucun casier judiciaire et qui s'est lavé les mains à le droit de voter.");
+        msg.reply("Seul un citoyen actif, non fonctionnaire, de plus de 18 ans, ayant une prostate en bon état, la nationalité depuis plus de 10 jours, n'ayant aucun casier judiciaire et qui s'est lavé les mains a le droit de voter.");
     }
 
     if (msg.content.match(/élections/i)) {
@@ -119,3 +119,4 @@ client.on("message", msg => {
 
 
 client.login("process.env.TOKEN");
+
