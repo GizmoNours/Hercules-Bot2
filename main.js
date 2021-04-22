@@ -18,9 +18,13 @@ client.on('guildMemberAdd', member => {
 client.on("message", msg => {
     if (msg.author.username != "Hercules"){
     if (msg.content.match(/hercules/i)) {
-        msg.reply("Le gouvernement tente d'imposer sa politique sans que je n'ai mon mot à dire.");
+        msg.reply("Pourquoi donc le nier, je t'ai envoûté, je t'ai ensorcelé !");
         }
   
+    if (msg.content.match(/Gouvernement/i)) {
+        msg.reply("Le gouvernement tente d'imposer sa politique sans que je n'ai mon mot à dire.");
+    }
+
     if (msg.content.match(/Référendum/i)) {
         msg.reply("Je demande un référendum à visages découvert.");
     }
@@ -107,6 +111,10 @@ client.on("message", msg => {
 
     if (msg.content.match(/Conflits/i)) {
         msg.reply("Les seuls qui m'interessent sont ceux au Kanard à la cantine.");
+    }
+
+    if (msg.content.match(/Prospectus/i)) {
+        msg.reply("Cachez-moi ce papier, signe de décadance politique, que je ne saurais voir.");
     }
 
     if (msg.mentions.has(client.user)) {
