@@ -1,6 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
+const port = process.env.PORT || 5000;
+
 require('events').EventEmitter.defaultMaxListeners = 0
 
 client.on("ready", () => {
@@ -12,7 +14,6 @@ client.on('guildMemberAdd', member => {
     if (!channel) return;
     channel.send(`Bienvenue en CL ${member.user}, Votre arrivée a-t-elle été approuvée par référendum ?`);
     
-
 });
 
 client.on("message", msg => {
@@ -122,7 +123,7 @@ client.on("message", msg => {
     }}
 });
 
-const port = process.env.PORT || 5000;
+
 //let port = process.env.PORT || 5000;
 //client.listen(process.env.PORT, '0.0.0.0')
 
