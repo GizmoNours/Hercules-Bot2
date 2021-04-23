@@ -122,7 +122,7 @@ client.on("message", msg => {
     }}
 });
 
-http.createServer(onRequest).listen(process.env.PORT || 5000)
+
 //let port = process.env.PORT || 5000;
 //client.listen(process.env.PORT, '0.0.0.0')
 
