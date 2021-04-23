@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 require('events').EventEmitter.defaultMaxListeners = 0
 
